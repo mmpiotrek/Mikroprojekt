@@ -7,8 +7,8 @@ using namespace cv;
 using namespace std;
 
 Mat Omapx_calibration_central, Omapy_calibration_central, Opanorama_central, image1_kwadrat;
-double width_pan = 2880;   //1620
-double height_pan = 621;   //6440
+double width_pan = 2880;  
+double height_pan = 621;   
 int Rprocent = 100; // powierzchnia panoramy Opanorama_central w procentach
 int Rmax = 460;
 struct ocam_model o_cata;	// deklaracja obiektu kamery ocam_model
