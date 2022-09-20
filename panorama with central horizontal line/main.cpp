@@ -12,7 +12,7 @@ double height_pan = 621;
 int Rprocent = 100; // powierzchnia panoramy Opanorama_central w procentach
 int Rmax = 460;
 struct ocam_model o_cata;	// deklaracja obiektu kamery ocam_model
-char * ocam_txt = "calib_results_1.txt";  // nazwa pliku z wynikami kalibracji
+char * ocam_txt = "calib_results.txt";  // nazwa pliku z wynikami kalibracji
 
 
 int main(int argc, char** argv )
