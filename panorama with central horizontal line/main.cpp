@@ -12,13 +12,13 @@ double height_pan = 621;   //6440
 int Rprocent = 100; // powierzchnia panoramy Opanorama_central w procentach
 int Rmax = 460;
 struct ocam_model o_cata;	// deklaracja obiektu kamery ocam_model
-char * ocam_txt = "calib_results_1.txt";
+char * ocam_txt = "calib_results_1.txt";  // nazwa pliku z wynikami kalibracji
 
 
 int main(int argc, char** argv )
 {
     Mat image;
-    image = imread("/home/piotr/mikroprojekt/source/eksperyment/parter/22/img_08-17-2022_11:03:43.png");
+    image = imread("/home/piotr/mikroprojekt/source/eksperyment/parter/22/img_08-17-2022_11:03:43.png");  // wczytanie zdjecia dookolnego
     cout<<image.size()<<endl;
     image1_kwadrat = image;
     // Wprowadzenie modelu katadioptrycznego
@@ -28,7 +28,7 @@ int main(int argc, char** argv )
          cout << "ERROR: Could not initialize catadioptric model parameters" << endl;
          return -1;
     }
-    // Przeksztalcenie macierzowe sluzace do powstania panoramy metoda wykorzystujaca wiedze o parametrach uk�adu katadioptrycznego
+    // Przeksztalcenie macierzowe sluzace do powstania panoramy metoda wykorzystujaca wiedze o parametrach ukladu katadioptrycznego
 	Opanorama_central.create(height_pan , width_pan , CV_8UC3);  // macierz uzywana do zapisywania obrazu
 	Omapx_calibration_central.create(Opanorama_central.size(),CV_32FC1); // macierze Omapx, Omapy do przeksztalcenia bez znieksztalcen
     Omapy_calibration_central.create(Opanorama_central.size(),CV_32FC1); //
@@ -41,13 +41,8 @@ int main(int argc, char** argv )
         return -1;
     }
     namedWindow("Display Image", WINDOW_AUTOSIZE );
-    imshow("Display Image", image);
-    // int down_width = 1080;
-    // int down_height = 720;
-    // Mat resize_down;
-	// resize(Opanorama_central, resize_down, Size(down_width, down_height), INTER_LINEAR);    
+    imshow("Display Image", image);   
     imshow("Panorama Image",Opanorama_central);
-    // cvtColor(Opanorama_central, result, COLOR_RGB2BGR);
     imwrite("panoramic_parter_calib3.png", Opanorama_central);
     waitKey(0);
     return 0;
