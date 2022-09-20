@@ -7,7 +7,8 @@ main.py - służy do zapisywania zdjęć z kamery do folderu w wyznaczonym miejs
 - numer seryjny kamery zgadza się z numerem seryjnym w kodzie,
 - ścieżka do której zapisywane są zdjęcia istnieje.
 
-Program uruchamiany jest z terminala za pomocą przykładowej komendy: python3 main.py manual -p
+Program uruchamiany jest z terminala za pomocą przykładowej komendy: `python3 main.py manual -p`
+
 Aby wyłączyć program należy wcisnąć klawisz 'q'. Wykonanie zdjęcia w trybie 'manual' następuje po wciśnięciu klawisza 'm'.
 Po każdym uruchomieniu programu tworzony jest nowy folder do którego zapisywane są zdjęcia.
 
