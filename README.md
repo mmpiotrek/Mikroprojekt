@@ -21,5 +21,5 @@ Po zbudowaniu projektu w folderze `build` należy umieścić plik kalibracyjny o
 
 ## calibration
 W tym folderze znajdują się foldery "images" (zawiera zdjęcia do kalibracji) oraz "Scaramuzza_OCamCalib_v3.0_win" (ToolBox do kalibracji w MatLabie).  
-Przed kalibracją należy zdjęcia z folderu images umieścić w folderze Scaramuzza_OCamCalib_v3.0_win. Informacje o używaniu ToolBoxa znajdują się na stronie:  
+Przed kalibracją należy umieścić zdjęcia z folderu images w folderze Scaramuzza_OCamCalib_v3.0_win. Informacje o używaniu ToolBoxa znajdują się na stronie:  
 https://sites.google.com/site/scarabotix/ocamcalib-omnidirectional-camera-calibration-toolbox-for-matlab
