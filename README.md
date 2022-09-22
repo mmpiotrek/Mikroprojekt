@@ -18,3 +18,8 @@ panoramic.py - zawiera dwie funkcje. Funkcja `video` służy do utworzenia pliku
 ## panorama with central horizontal line  
 W folderze "panorama with central horizontal line" znajdują się pliki programu (napisanego w języku C++) służącego do tworzenia zdjęcia panoramicznego z wykorzystaniem wiedzy o parametrach kamery z centralną linią horyzontalną.  
 Po zbudowaniu projektu w folderze `build` należy umieścić plik kalibracyjny o nazwie `calib_results.txt`, który powstał w wyniku przeprowadzonej kalibracji kamery.
+
+## calibration
+W tym folderze znajdują się foldery "images" (zawiera zdjęcia do kalibracji) oraz "Scaramuzza_OCamCalib_v3.0_win" (ToolBox do kalibracji w MatLabie).  
+Przed kalibracją należy zdjęcia z folderu images umieścić w folderze Scaramuzza_OCamCalib_v3.0_win. Informacje o używaniu ToolBoxa znajdują się na stronie:  
+https://sites.google.com/site/scarabotix/ocamcalib-omnidirectional-camera-calibration-toolbox-for-matlab
