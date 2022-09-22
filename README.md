@@ -22,4 +22,6 @@ Po zbudowaniu projektu w folderze `build` należy umieścić plik kalibracyjny o
 ## calibration
 W tym folderze znajdują się foldery "images" (zawiera zdjęcia do kalibracji) oraz "Scaramuzza_OCamCalib_v3.0_win" (ToolBox do kalibracji w MatLabie).  
 Przed kalibracją należy umieścić zdjęcia z folderu images w folderze Scaramuzza_OCamCalib_v3.0_win. Informacje o używaniu ToolBoxa znajdują się na stronie:  
-https://sites.google.com/site/scarabotix/ocamcalib-omnidirectional-camera-calibration-toolbox-for-matlab
+https://sites.google.com/site/scarabotix/ocamcalib-omnidirectional-camera-calibration-toolbox-for-matlab  
+Aby wczytać wszystkie zdjęcia do kalibracji, po naciśnięciu przycisku "Read names" pojawia się komunikat "Basename camera calibration images (without number nor suffix):", należy wpisać "img", a następnie wybrać rozszerzenie j.  
+Liczba kwadratów wzdłuż linii x wynosi: 7, a wzdłuż linii y: 4. Kwadraty mają rozmiar 10cm x 10cm.
